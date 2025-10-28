@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertNotSame;
 import static org.junit.jupiter.api.Assertions.assertSame;
 import org.junit.jupiter.api.Test;
 
-import com.hospital.patterns.database.DatabaseConnection;
+import com.hospital.patterns.Singleton.DatabaseConnection;
 
 class DatabaseConnectionTest {
 

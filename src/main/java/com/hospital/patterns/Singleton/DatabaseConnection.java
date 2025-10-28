@@ -1,4 +1,4 @@
-package com.hospital.patterns.database;
+package com.hospital.patterns.Singleton;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -29,7 +29,7 @@ public class DatabaseConnection {
   }
 
   /**
-   * Lấy instance của DatabaseConnection (không có tham số)
+   * Lấy instance của DatabaseConnection
    * @return instance của DatabaseConnection
    */
   public static DatabaseConnection getInstance() {
@@ -144,7 +144,7 @@ public class DatabaseConnection {
       testConnection.close();
 
       System.out.println("Database connection established successfully");
-    } catch (Exception e) {
+    } catch (ClassNotFoundException | SQLException e) {
       throw new RuntimeException("Failed to initialize database connection", e);
     }
   }
@@ -162,7 +162,7 @@ public class DatabaseConnection {
   }
 
   /**
-   * Trả về thông tin về DatabaseConnection (toString)
+   * Trả về thông tin về DatabaseConnection
    * @return thông tin về DatabaseConnection
    */
   @Override
