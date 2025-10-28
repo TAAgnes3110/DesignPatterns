@@ -1,0 +1,5 @@
+# Created at 2025-10-28T21:23:48.980
+Boot Manifest-JAR contains absolute paths in classpath 'D:\Năm 4 kì 1\Đặc tả phần mềm\HospitalDesignPatterns\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

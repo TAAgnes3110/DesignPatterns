@@ -1,0 +1,132 @@
+{
+  // 🖋 Font & hiển thị
+  "editor.fontFamily": "'Fira Code', 'JetBrains Mono', 'Cascadia Code', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 15,
+  "editor.lineHeight": 22,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+
+  // 📑 Trình bày code
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.wordWrap": "off",
+  "editor.formatOnPaste": true,
+  "editor.rulers": [
+    { "column": 80, "color": "#00FF0020" },
+    { "column": 100, "color": "#00FF0030" }
+  ],
+  "editor.linkedEditing": true,
+  "editor.minimap.enabled": false,
+
+  // ✨ IntelliSense / Gợi ý
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
+  "editor.inlineSuggest.enabled": true,
+  "editor.suggestSelection": "first",
+  "explorer.compactFolders": false,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.startupEditor": "newUntitledFile",
+
+  // 🧼 Lưu & format
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.autoSave": "onWindowChange",
+  "files.encoding": "utf8",
+  "files.autoGuessEncoding": true,
+
+  // ⚙️ TERMINAL - ĐƠN GIẢN HÓA VỀ DEFAULT
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.scrollback": 10000,
+
+  // 🎯 CẤU HÌNH TERMINAL PANEL
+  "workbench.panel.defaultLocation": "bottom",
+  "workbench.panel.opensMaximized": "never",
+  "terminal.integrated.tabs.enabled": true,
+
+  // 🔀 Git & GitHub
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "git.openRepositoryInParentFolders": "always",
+
+  // 🛠 Node.js
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+
+  // ☕ JAVA - CẤU HÌNH ĐƠN GIẢN
+  "java.debug.settings.console": "integratedTerminal",
+  "java.debug.settings.onBuildFailureProceed": true,
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-21",
+      "path": "E:\\jdk",
+      "default": true
+    }
+  ],
+
+  // 🔨 MAVEN
+  "maven.executable.path": "E:\\apache-maven-3.9.11-bin\\apache-maven-3.9.11\\bin\\mvn.cmd",
+  "maven.terminal.useJavaHome": true,
+
+  // 🎨 JAVA FORMATTING
+  "[java]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.formatOnSave": true
+  },
+
+  // 🐛 DEBUG CONSOLE - ĐƠN GIẢN HÓA
+  "debug.console.fontSize": 13,
+  "debug.console.wordWrap": true,
+  "debug.internalConsoleOptions": "neverOpen",
+  "debug.terminal.clearBeforeReusing": true,
+
+  // 🔧 CODE RUNNER
+  "code-runner.runInTerminal": true,
+  "code-runner.saveAllFilesBeforeRun": true,
+  "code-runner.clearPreviousOutput": true,
+
+  // 🚀 WORKBENCH
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.value": 10,
+
+  // 📁 EXPLORER
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmPasteNative": false,
+  "explorer.autoReveal": true,
+
+  // 🔒 SECURITY
+  "security.workspace.trust.untrustedFiles": "open",
+
+  // 🛡️ PROBLEMS
+  "problems.decorations.enabled": true,
+  "problems.showCurrentInStatus": true,
+
+  // 🔇 TELEMETRY
+  "telemetry.telemetryLevel": "off",
+
+  // 🔧 JAVA EXTENSIONS
+  "java.completion.favoriteStaticMembers": [
+    "org.junit.jupiter.api.Assertions.*",
+    "org.junit.jupiter.api.Assumptions.*",
+    "org.mockito.Mockito.*",
+    "org.mockito.ArgumentMatchers.*"
+  ]
+}
+
