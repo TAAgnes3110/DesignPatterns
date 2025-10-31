@@ -43,7 +43,7 @@ public class DatabaseConnection {
         }
       }
     }
-    return instance;
+    return result;
   }
 
   /**
@@ -65,7 +65,7 @@ public class DatabaseConnection {
         }
       }
     }
-    return instance;
+    return result;
   }
 
   /**
