@@ -1,3 +1,12 @@
-D:\HospitalDesignPatterns\src\test\java\com\hospital\patterns\singleton\DatabaseConnectionTest.java
-D:\HospitalDesignPatterns\src\test\java\com\hospital\patterns\factory\staff\StaffCreatorTest.java
+D:\HospitalDesignPatterns\src\test\java\com\hospital\patterns\State\StateTest.java
+D:\HospitalDesignPatterns\src\test\java\com\hospital\patterns\TemplateMethod\TemplateMethodTest.java
+D:\HospitalDesignPatterns\src\test\java\com\hospital\patterns\Builder\BuilderTest.java
+D:\HospitalDesignPatterns\src\test\java\com\hospital\patterns\Factory\FactoryTest.java
+D:\HospitalDesignPatterns\src\test\java\com\hospital\patterns\Singleton\SingletonTest.java
+D:\HospitalDesignPatterns\src\test\java\com\hospital\patterns\Observer\ObserverTest.java
+D:\HospitalDesignPatterns\src\test\java\com\hospital\patterns\Command\CommandTest.java
+D:\HospitalDesignPatterns\src\test\java\com\hospital\patterns\Decorator\DecoratorTest.java
+D:\HospitalDesignPatterns\src\test\java\com\hospital\patterns\Adapter\AdapterTest.java
+D:\HospitalDesignPatterns\src\test\java\com\hospital\patterns\Facade\FacadeTest.java
+D:\HospitalDesignPatterns\src\test\java\com\hospital\patterns\Strategy\StrategyTest.java
 D:\HospitalDesignPatterns\src\test\java\com\hospital\patterns\AbstractFactory\AbstractFactoryTest.java

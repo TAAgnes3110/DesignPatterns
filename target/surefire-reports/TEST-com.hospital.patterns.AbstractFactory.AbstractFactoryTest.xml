@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.hospital.patterns.AbstractFactory.AbstractFactoryTest" time="0.109" tests="18" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.hospital.patterns.AbstractFactory.AbstractFactoryTest" time="0.058" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,9 +15,9 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="E:\jdk\bin"/>
-    <property name="sun.java.command" value="C:\Users\TAAgnes\AppData\Local\Temp\surefire4284604536915664935\surefirebooter-20251101213841013_3.jar C:\Users\TAAgnes\AppData\Local\Temp\surefire4284604536915664935 2025-11-01T21-38-40_874-jvmRun1 surefire-20251101213841013_1tmp surefire_0-20251101213841013_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\TAAgnes\AppData\Local\Temp\surefire11303388508718183490\surefirebooter-20251104220054611_3.jar C:\Users\TAAgnes\AppData\Local\Temp\surefire11303388508718183490 2025-11-04T22-00-54_376-jvmRun1 surefire-20251104220054611_1tmp surefire_0-20251104220054611_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="com.hospital.patterns.AbstractFactory.AbstractFactoryTest"/>
+    <property name="test" value="com.hospital.patterns.AbstractFactory.AbstractFactoryTest#testStandardDAOFactory"/>
     <property name="surefire.test.class.path" value="D:\HospitalDesignPatterns\target\test-classes;D:\HospitalDesignPatterns\target\classes;C:\Users\TAAgnes\.m2\repository\org\postgresql\postgresql\42.6.0\postgresql-42.6.0.jar;C:\Users\TAAgnes\.m2\repository\org\checkerframework\checker-qual\3.31.0\checker-qual-3.31.0.jar;C:\Users\TAAgnes\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.0\junit-jupiter-5.10.0.jar;C:\Users\TAAgnes\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\TAAgnes\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\TAAgnes\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\TAAgnes\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\TAAgnes\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\TAAgnes\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\TAAgnes\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\TAAgnes\.m2\repository\org\mockito\mockito-core\5.5.0\mockito-core-5.5.0.jar;C:\Users\TAAgnes\.m2\repository\net\bytebuddy\byte-buddy\1.14.6\byte-buddy-1.14.6.jar;C:\Users\TAAgnes\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.6\byte-buddy-agent-1.14.6.jar;C:\Users\TAAgnes\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\TAAgnes\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\TAAgnes"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\TAAgnes\AppData\Local\Temp\surefire4284604536915664935\surefirebooter-20251101213841013_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\TAAgnes\AppData\Local\Temp\surefire11303388508718183490\surefirebooter-20251104220054611_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.8+12-LTS-250"/>
@@ -60,43 +60,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testTaoFactoryVoiNull" classname="com.hospital.patterns.AbstractFactory.AbstractFactoryTest" time="0.03"/>
-  <testcase name="testStandardPatientDAOCacPhuongThuc" classname="com.hospital.patterns.AbstractFactory.AbstractFactoryTest" time="0.013">
-    <system-out><![CDATA[Saving patient: Nguyễn Văn A
-Finding all patients
-Finding patient by id: 1
-Deleting patient by id: 1
-]]></system-out>
-  </testcase>
-  <testcase name="testOptimizedPatientDAOCacPhuongThuc" classname="com.hospital.patterns.AbstractFactory.AbstractFactoryTest" time="0.002">
-    <system-out><![CDATA[Saving patient: Trần Thị B
-Finding all patients
-Deleting patient by id: 2
-]]></system-out>
-  </testcase>
-  <testcase name="testAbstractFactoryPatternOptimized" classname="com.hospital.patterns.AbstractFactory.AbstractFactoryTest" time="0.002"/>
-  <testcase name="testTaoStandardDAOFactory" classname="com.hospital.patterns.AbstractFactory.AbstractFactoryTest" time="0.001"/>
-  <testcase name="testAbstractFactoryPatternStandard" classname="com.hospital.patterns.AbstractFactory.AbstractFactoryTest" time="0.001"/>
-  <testcase name="testOptimizedAppointmentDAOCacPhuongThuc" classname="com.hospital.patterns.AbstractFactory.AbstractFactoryTest" time="0.003">
-    <system-out><![CDATA[Saving appointment: 2
-Finding all appointments
-Deleting appointment by id: 2
-]]></system-out>
-  </testcase>
-  <testcase name="testStandardFactoryTaoStandardPatientDAO" classname="com.hospital.patterns.AbstractFactory.AbstractFactoryTest" time="0.0"/>
-  <testcase name="testOptimizedFactoryTaoOptimizedAppointmentDAO" classname="com.hospital.patterns.AbstractFactory.AbstractFactoryTest" time="0.001"/>
-  <testcase name="testTaoNhieuInstances" classname="com.hospital.patterns.AbstractFactory.AbstractFactoryTest" time="0.001"/>
-  <testcase name="testTaoOptimizedDAOFactory" classname="com.hospital.patterns.AbstractFactory.AbstractFactoryTest" time="0.0"/>
-  <testcase name="testFactoryTaoDAOCaseInsensitive" classname="com.hospital.patterns.AbstractFactory.AbstractFactoryTest" time="0.0"/>
-  <testcase name="testTaoFactoryCaseInsensitive" classname="com.hospital.patterns.AbstractFactory.AbstractFactoryTest" time="0.001"/>
-  <testcase name="testOptimizedFactoryTaoOptimizedPatientDAO" classname="com.hospital.patterns.AbstractFactory.AbstractFactoryTest" time="0.0"/>
-  <testcase name="testStandardFactoryTaoStandardAppointmentDAO" classname="com.hospital.patterns.AbstractFactory.AbstractFactoryTest" time="0.001"/>
-  <testcase name="testStandardAppointmentDAOCacPhuongThuc" classname="com.hospital.patterns.AbstractFactory.AbstractFactoryTest" time="0.001">
-    <system-out><![CDATA[Saving appointment: 1
-Finding all appointments
-Deleting appointment by id: 1
-]]></system-out>
-  </testcase>
-  <testcase name="testFactoryVoiDAOTypeKhongHopLe" classname="com.hospital.patterns.AbstractFactory.AbstractFactoryTest" time="0.001"/>
-  <testcase name="testTaoFactoryVoiLoaiKhongHopLe" classname="com.hospital.patterns.AbstractFactory.AbstractFactoryTest" time="0.002"/>
+  <testcase name="testStandardDAOFactory" classname="com.hospital.patterns.AbstractFactory.AbstractFactoryTest" time="0.031"/>
 </testsuite>
