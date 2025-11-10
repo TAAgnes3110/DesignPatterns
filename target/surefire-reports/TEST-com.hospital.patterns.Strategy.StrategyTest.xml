@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.hospital.patterns.Adapter.AdapterTest" time="0.03" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.hospital.patterns.Strategy.StrategyTest" time="0.016" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -58,9 +58,24 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testAdapterPattern" classname="com.hospital.patterns.Adapter.AdapterTest" time="0.028">
-    <system-out><![CDATA[Processing legacy payment: 100.0 for patient: Patient 101
-✓ Adapter: PaymentAdapter
+  <testcase name="testInsurancePayment" classname="com.hospital.patterns.Strategy.StrategyTest" time="0.006">
+    <system-out><![CDATA[Paid 300.00 via insurance ABC Insurance (Policy: POL123)
+✓ Strategy: InsurancePayment
+]]></system-out>
+  </testcase>
+  <testcase name="testPaymentProcessor" classname="com.hospital.patterns.Strategy.StrategyTest" time="0.004">
+    <system-out><![CDATA[Paid 100.00 in cash
+✓ Strategy: PaymentProcessor
+]]></system-out>
+  </testcase>
+  <testcase name="testCashPayment" classname="com.hospital.patterns.Strategy.StrategyTest" time="0.001">
+    <system-out><![CDATA[Paid 100.00 in cash
+✓ Strategy: CashPayment
+]]></system-out>
+  </testcase>
+  <testcase name="testCreditCardPayment" classname="com.hospital.patterns.Strategy.StrategyTest" time="0.002">
+    <system-out><![CDATA[Paid 200.00 with credit card 1234 by Vân Anh
+✓ Strategy: CreditCardPayment
 ]]></system-out>
   </testcase>
 </testsuite>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.hospital.patterns.Adapter.AdapterTest" time="0.03" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.hospital.patterns.Decorator.DecoratorTest" time="0.02" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -58,9 +58,26 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testAdapterPattern" classname="com.hospital.patterns.Adapter.AdapterTest" time="0.028">
-    <system-out><![CDATA[Processing legacy payment: 100.0 for patient: Patient 101
-✓ Adapter: PaymentAdapter
+  <testcase name="testBasicRecord" classname="com.hospital.patterns.Decorator.DecoratorTest" time="0.003">
+    <system-out><![CDATA[Saving basic medical record
+✓ BasicMedicalRecord
+]]></system-out>
+  </testcase>
+  <testcase name="testAuditLogDecorator" classname="com.hospital.patterns.Decorator.DecoratorTest" time="0.003">
+    <system-out><![CDATA[[AUDIT LOG] Record accessed
+[AUDIT LOG] Record saved
+Saving basic medical record
+✓ AuditLogMedicalRecordDecorator
+]]></system-out>
+  </testcase>
+  <testcase name="testSignedDecorator" classname="com.hospital.patterns.Decorator.DecoratorTest" time="0.002">
+    <system-out><![CDATA[Saving basic medical record
+✓ SignedMedicalRecordDecorator
+]]></system-out>
+  </testcase>
+  <testcase name="testEncryptedDecorator" classname="com.hospital.patterns.Decorator.DecoratorTest" time="0.004">
+    <system-out><![CDATA[Saving encrypted medical record with key: key123
+✓ EncryptedMedicalRecordDecorator
 ]]></system-out>
   </testcase>
 </testsuite>
