@@ -1,0 +1,12 @@
+com\hospital\patterns\Adapter\AdapterTest.class
+com\hospital\patterns\TemplateMethod\TemplateMethodTest.class
+com\hospital\patterns\Command\CommandTest.class
+com\hospital\patterns\Observer\ObserverTest.class
+com\hospital\patterns\Builder\BuilderTest.class
+com\hospital\patterns\AbstractFactory\AbstractFactoryTest.class
+com\hospital\patterns\Singleton\SingletonTest.class
+com\hospital\patterns\State\StateTest.class
+com\hospital\patterns\Strategy\StrategyTest.class
+com\hospital\patterns\Facade\FacadeTest.class
+com\hospital\patterns\Factory\FactoryTest.class
+com\hospital\patterns\Decorator\DecoratorTest.class

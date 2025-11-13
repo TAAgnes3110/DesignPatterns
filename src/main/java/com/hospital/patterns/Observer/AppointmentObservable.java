@@ -31,6 +31,9 @@ public class AppointmentObservable implements AppointmentSubject {
   }
 
   public void setStatus(String status) {
+    if (appointment != null) {
+      appointment.setStatus(status);
+    }
     notifyObservers();
   }
 }
