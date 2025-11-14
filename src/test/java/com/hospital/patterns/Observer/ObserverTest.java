@@ -11,7 +11,7 @@ class ObserverTest {
     apt.setAppointmentId(1);
     apt.setPatientId(101);
     apt.setDoctorId(201);
-    apt.setStatus("Scheduled");
+    apt.setStatus("Đã lên lịch");
 
     AppointmentObservable observable = new AppointmentObservable(apt);
     PatientObserver patientObserver = new PatientObserver(101);
@@ -20,13 +20,13 @@ class ObserverTest {
     observable.attach(patientObserver);
     observable.attach(doctorObserver);
 
-    assertEquals("Scheduled", apt.getStatus());
+    assertEquals("Đã lên lịch", apt.getStatus());
     System.out.println("  → Trạng thái ban đầu: " + apt.getStatus());
     System.out.println("  → Đã đăng ký: PatientObserver (ID: 101), DoctorObserver (ID: 201)");
 
-    observable.setStatus("Confirmed");
+    observable.setStatus("Đã xác nhận");
 
-    assertEquals("Confirmed", apt.getStatus());
+    assertEquals("Đã xác nhận", apt.getStatus());
     System.out.println("  → Trạng thái mới: " + apt.getStatus());
     System.out.println("✓ Observer: setStatus cập nhật appointment và thông báo tất cả observers");
   }
@@ -46,14 +46,14 @@ class ObserverTest {
     observable.attach(smsObserver);
     System.out.println("  → Đã attach: PatientObserver, SMSNotificationObserver");
 
-    observable.setStatus("Confirmed");
+    observable.setStatus("Đã xác nhận");
     System.out.println("  → Thay đổi status: Confirmed (2 observers nhận thông báo)");
 
     // Test detach
     observable.detach(observer);
     System.out.println("  → Đã detach: PatientObserver");
 
-    observable.setStatus("Cancelled");
+    observable.setStatus("Đã hủy");
     System.out.println("  → Thay đổi status: Cancelled (chỉ 1 observer nhận thông báo)");
 
     assertDoesNotThrow(() -> observable.notifyObservers());
@@ -74,9 +74,9 @@ class ObserverTest {
 
     System.out.println("  → Đã đăng ký 3 observers: PatientObserver, DoctorObserver, SMSNotificationObserver");
 
-    observable.setStatus("Completed");
+    observable.setStatus("Hoàn thành");
 
-    assertEquals("Completed", apt.getStatus());
+    assertEquals("Hoàn thành", apt.getStatus());
     System.out.println("✓ Observer: Nhiều observers cùng nhận thông báo khi status thay đổi");
   }
 }

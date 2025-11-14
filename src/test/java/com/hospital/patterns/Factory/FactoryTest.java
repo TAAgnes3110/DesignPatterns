@@ -9,7 +9,7 @@ class FactoryTest {
     StaffCreator creator = new DoctorCreator();
     assertEquals("Doctor", creator.getStaffType());
 
-    String specialty = "Cardiology";
+    String specialty = "Tim Mạch";
     Staff doctor = creator.createStaff("Vân", "Anh", specialty);
 
     assertNotNull(doctor);
@@ -30,8 +30,8 @@ class FactoryTest {
     StaffCreator creator = new NurseCreator();
     assertEquals("Nurse", creator.getStaffType());
 
-    String specialization = "ICU";
-    String shiftHours = "Day";
+    String specialization = "Chăm sóc Đặc biệt";
+    String shiftHours = "3";
     Staff nurse = creator.createStaff("Minh", "Hương", specialization, shiftHours);
 
     assertNotNull(nurse);
@@ -53,7 +53,7 @@ class FactoryTest {
     StaffCreator creator = new AdminCreator();
     assertEquals("Admin", creator.getStaffType());
 
-    String department = "Manager";
+    String department = "Giám đốc";
     Staff admin = creator.createStaff("Thanh", "Tùng", department);
 
     assertNotNull(admin);
@@ -81,7 +81,7 @@ class FactoryTest {
     System.out.println("✓ Factory: Factory Method Pattern");
     for (StaffCreator creator : creators) {
       Staff staff = creator.getStaffType().equals("Nurse")
-          ? creator.createStaff("Test", "User", "ICU", "Day")
+          ? creator.createStaff("Test", "User", "Chăm sóc Đặc biệt", "Day")
           : creator.createStaff("Test", "User", "Param");
 
       assertEquals(creator.getStaffType(), staff.getRole());

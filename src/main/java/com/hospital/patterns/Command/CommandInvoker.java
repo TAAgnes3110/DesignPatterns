@@ -29,9 +29,5 @@ public class CommandInvoker {
   public boolean hasHistory() {
     return !commandHistory.isEmpty();
   }
-
-  public void clearHistory() {
-    commandHistory.clear();
-  }
 }
 

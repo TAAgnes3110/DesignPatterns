@@ -37,4 +37,3 @@ public class AppointmentObservable implements AppointmentSubject {
     notifyObservers();
   }
 }
-
